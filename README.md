@@ -1,81 +1,79 @@
-# Developer Trends Analysis (Stack Overflow Dataset)
+# Delnee Travel Data System (Graduation Project)
 
 ## Overview
-This project analyzes global developer trends using data from the Stack Overflow Developer Survey, along with additional data sources such as job postings.
+This project represents a data-driven system designed to support travel planning by managing and retrieving structured data related to users, countries, hotels, and tourist destinations.
 
-The objective is to identify patterns in technology usage, developer preferences, and industry demand to better understand how the software development landscape is evolving.
-
----
-
-## Data Sources
-- Stack Overflow Developer Survey (2019)
-- GitHub Jobs API (modified dataset)
+Originally developed as a web application, this repository focuses on the underlying data model, SQL usage, and how data flows through the system.
 
 ---
 
-## Tools Used
-- IBM Cognos (data visualization & dashboards)
-- Excel (data preparation)
-- SQL (data querying and transformation)
+## Key Features
+- User authentication system (login/logout)
+- Dynamic retrieval of countries and tourist locations
+- Database-driven content rendering
+- Booking system for hotels and travel-related services
 
 ---
 
-## Key Analysis Areas
-- Programming language trends
-- Database technology trends
-- Developer demographics
-- Job preference factors
+## Tech Stack
+- PHP (server-side logic)
+- MySQL (relational database)
+- SQL (data querying and filtering)
 
 ---
 
-## Key Insights
+## Database Design
 
-### Programming Languages
-- JavaScript remains the most widely used and desired language, reflecting the continued dominance of web development
-- Python is rapidly increasing in demand, likely driven by its strong role in data science and machine learning
-- Interest in Bash/Shell scripting is declining as developers move toward more modern tools
+The system is built using a relational database with the following core entities:
 
-### Databases
-- NoSQL databases (e.g., MongoDB, DynamoDB) are growing in popularity due to their flexibility with complex data
-- Relational databases remain widely used, showing their continued importance in structured data systems
-- PostgreSQL is gaining traction, likely due to its advanced features and ease of use
-- Interest in Microsoft SQL Server is decreasing compared to other database solutions
+- Users (authentication data)
+- Countries (travel destinations)
+- Hotels (linked to countries)
+- Rooms (linked to hotels)
+- Places (tourist attractions linked to countries)
+- Bookings (user transactions)
 
-### Developer Insights
-- Majority of respondents are aged 22–32, indicating a relatively young workforce
-- Most respondents are from developed, English-speaking countries
-- The most important job factor is the technologies used, highlighting the importance of modern tech stacks
+This structure reflects a real-world data model with relationships between entities.
 
 ---
 
-## Why This Matters
-Understanding these trends helps:
-- Developers choose relevant technologies to learn
-- Companies align their tech stacks with market demand
-- Organizations make informed hiring and technology decisions
+## Example Queries
 
----
+Retrieve places for a selected country:
 
-## Conclusion
-Developers tend to prefer:
-- Simple and easy-to-use technologies
-- Tools with less complexity
-- Technologies that reduce errors (e.g., strongly typed languages)
+```sql
+SELECT * FROM places WHERE country_id = ?;
+```
 
----
+Retrieve rooms for a specific hotel:
 
-## Dashboards
+```sql
+SELECT * FROM rooms WHERE hotel_id = ?;
+```
 
-### Dashboard 1
-![Dashboard 1](screenshots/dashboard1.png)
+Data Flow
+User selects a country
+System sends request to backend
+SQL query retrieves related data (places, hotels, etc.)
+Results are displayed dynamically
 
-### Dashboard 2
-![Dashboard 2](screenshots/dashboard2.png)
 
-### Dashboard 3
-![Dashboard 3](screenshots/dashboard3.png)
+Screenshots
 
----
+Homepage
 
-## Project Status
-This project was developed as part of a data analysis capstone. The dashboards and analysis are complete and demonstrate practical data analysis and visualization skills.
+Login Page
+
+Country Selection
+
+Tourist Places
+
+Project Status
+
+This project is partially preserved due to data loss. Core backend logic and database interaction remain available.
+
+Key Learnings
+Working with relational databases (MySQL)
+Writing SQL queries for dynamic data retrieval
+Designing data models for real-world applications
+
