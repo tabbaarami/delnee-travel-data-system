@@ -51,27 +51,40 @@ Retrieve rooms for a specific hotel:
 SELECT * FROM rooms WHERE hotel_id = ?;
 ```
 
-Data Flow
-User selects a country
-System sends request to backend
-SQL query retrieves related data (places, hotels, etc.)
-Results are displayed dynamically
+---
 
+## Data Flow
 
-Screenshots
+1. User selects a country  
+2. System sends request to backend  
+3. SQL query retrieves related data (places, hotels, etc.)  
+4. Results are displayed dynamically  
 
-Homepage
+---
 
-Login Page
+## Screenshots
 
-Country Selection
+### Homepage
 
-Tourist Places
+### Login Page
 
-Project Status
+### Country Selection
+
+### Tourist Places
+
+---
+
+## Project Status
 
 This project is partially preserved due to data loss. Core backend logic and database interaction remain available.
 
+---
+
+## Key Learnings
+
+- Working with relational databases (MySQL)
+- Writing SQL queries for dynamic data retrieval
+- Designing data models for real-world applications
 Key Learnings
 Working with relational databases (MySQL)
 Writing SQL queries for dynamic data retrieval
