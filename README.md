@@ -85,8 +85,4 @@ This project is partially preserved due to data loss. Core backend logic and dat
 - Working with relational databases (MySQL)
 - Writing SQL queries for dynamic data retrieval
 - Designing data models for real-world applications
-Key Learnings
-Working with relational databases (MySQL)
-Writing SQL queries for dynamic data retrieval
-Designing data models for real-world applications
 
