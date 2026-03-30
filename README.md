@@ -66,11 +66,11 @@ SELECT * FROM rooms WHERE hotel_id = ?;
 
 ### Homepage
 
-### Login Page
+### Country Selection & Places Data
 
-### Country Selection
+### Hotel & Room Filtering
 
-### Tourist Places
+### Booking Data Input
 
 ---
 
