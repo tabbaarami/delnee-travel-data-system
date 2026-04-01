@@ -65,12 +65,16 @@ SELECT * FROM rooms WHERE hotel_id = ?;
 ## Screenshots
 
 ### Homepage
+![Homepage](screenshots/homepage.png)
 
 ### Country Selection & Places Data
+![Country and Places](screenshots/countries_places.png)
 
 ### Hotel & Room Filtering
+![Hotel Selection](screenshots/hotel_selection.png)
 
 ### Booking Data Input
+![Booking Form](screenshots/booking_form.png)
 
 ---
 
